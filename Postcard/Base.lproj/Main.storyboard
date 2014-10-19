@@ -58,7 +58,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-Fp-Fgm">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-Fp-Fgm">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -103,6 +103,15 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BDq-sK-A9W"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXf-go-2b6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="62" y="172" width="175" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +121,7 @@
                                 <exclude reference="az6-Vz-lfO"/>
                                 <exclude reference="p6A-q5-hWR"/>
                                 <exclude reference="F0S-k8-ReY"/>
+                                <exclude reference="HXf-go-2b6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,14 +131,16 @@
                                 <include reference="az6-Vz-lfO"/>
                                 <include reference="p6A-q5-hWR"/>
                                 <include reference="F0S-k8-ReY"/>
+                                <include reference="HXf-go-2b6"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="p6A-q5-hWR" id="t9Z-fx-6CZ"/>
                         <outlet property="enterNameTextfield" destination="az6-Vz-lfO" id="rIW-21-79s"/>
-                        <outlet property="mailButton" destination="F0S-k8-ReY" id="DZH-9r-rMg"/>
+                        <outlet property="mailButton" destination="F0S-k8-ReY" id="xww-kF-1Ug"/>
                         <outlet property="messageLabel" destination="PZB-Fp-Fgm" id="Lee-lQ-HOO"/>
+                        <outlet property="nameLabel" destination="HXf-go-2b6" id="oQc-oG-MMb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
